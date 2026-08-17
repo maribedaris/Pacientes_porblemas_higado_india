@@ -1,5 +1,9 @@
 # Data structure
 
+## Fuente del proyecto
+
+El dataset utilizado en este proyecto es un dataset publico modificado por el profesor y descargado en local. La fuente efectiva y unica de datos es `data/01_raw/Pacientes_porblemas_higado_india.csv`; los notebooks y procesos deben leer siempre desde esta ruta y no desde una fuente externa.
+
 layered data-engineering convention
 
 ![layered data engineering](https://docs.kedro.org/en/stable/_images/data_layers.png)
