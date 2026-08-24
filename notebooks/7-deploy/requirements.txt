@@ -1,0 +1,9 @@
+# Dependencias de la demo Streamlit del proyecto de pacientes con problemas de hígado.
+# Versiones fijadas a las usadas al entrenar el modelo (models/pacientes_higado_clasificacion-gaussiannb-v2.joblib)
+# para garantizar que el joblib carga sin incompatibilidades en Streamlit Community Cloud.
+streamlit==1.62.0
+scikit-learn==1.9.0
+pandas==3.0.5
+numpy==2.5.2
+joblib==1.5.3
+pyarrow>=25.0.1
