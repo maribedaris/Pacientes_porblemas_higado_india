@@ -127,6 +127,13 @@ para replicarlo en otro fork o cuenta:
 - **Las versiones de las dependencias están fijadas** a las del entorno de
   entrenamiento (`requirements.txt` de esta carpeta) para que el joblib cargue sin
   incompatibilidades en la nube.
+- **Roles de los archivos de dependencias**: `streamlit` está declarado en el
+  `pyproject.toml` de la raíz, así que el flujo nativo del proyecto (`uv sync`) instala
+  todo, incluida la demo. El `requirements.txt` y `runtime.txt` de esta carpeta existen
+  **solo para Streamlit Community Cloud**, que instala la app desde un
+  `requirements.txt` en la carpeta de la app y no sabe usar `uv.lock`; también sirven
+  para quien prefiera `pip` (opciones A/B de más arriba). No son dos instalaciones
+  contradictorias: son el mismo set de paquetes para dos mecanismos distintos.
 - `runtime.txt` fija Python 3.12, la versión usada en el proyecto.
 - El score que muestra la app no es una probabilidad calibrada: el notebook de
   interpretación documenta que la correlación entre las bilirrubinas infla la
