@@ -24,6 +24,8 @@ dependencies = [
     # AutoML del notebook 06 (selección automática de modelos)
     "flaml>=2.6.0",
     "lightgbm>=4.7.0",
+    # Demo interactiva del modelo (notebooks/7-deploy/streamlit_app.py)
+    "streamlit>=1.62.0",
 ]
 
 [project.urls]
